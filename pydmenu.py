@@ -8,7 +8,8 @@ __author__ = "Mathias Teugels <cpf@codercpf.be>"
 
 SAVEFILE=os.path.expanduser('~/.pydmenu_save')
 DMENU=['dmenu', '-fn', '-*-Inconsolata-*-r-normal-*-*-120-*-*-*-*-iso8859-*', '-nb', '#000000', '-nf', '#FFFFFF', '-sb', '#0066ff']
-DMENU_PATH=['dmenu_path']
+#DMENU_PATH=['dmenu_path']
+DMENU_PATH=['bash', '-c', '. ~/.bash_aliases; compgen -c']  # include bash aliases in the list
 
 def restore_saved():
     temp = {}
