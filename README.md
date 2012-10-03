@@ -1,6 +1,6 @@
 ## Pydmenu
 
-Pydmenu is a clone of [Yeganesh](http://dmwit.com/yeganesh/), written in Python.
+Pydmenu is a Python clone of [Yeganesh](http://dmwit.com/yeganesh/).  Both are wrappers around the [venerable dmenu](http://paperlined.org/apps/dmenu/many_uses.html);
 
 ## Fork
 
