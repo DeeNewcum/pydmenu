@@ -1,0 +1,6 @@
+Things to implement:
+
+- add a flag that lets you remove an entry
+
+- add a -- flag, with the same functionality that Yeganesh's -- flag has.  After doing this, we can
+        remove the hard-coded options found in the DMENU array
