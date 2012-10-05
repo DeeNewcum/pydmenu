@@ -2,5 +2,7 @@ Things to implement:
 
 - add a flag that lets you remove an entry
 
+    - one of the PSOne guys suggested the 'argparse' library
+
 - add a -- flag, with the same functionality that Yeganesh's -- flag has.  After doing this, we can
         remove the hard-coded options found in the DMENU array
