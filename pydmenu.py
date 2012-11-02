@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import cPickle
+import argparse
 from subprocess import Popen, PIPE
 from operator import itemgetter
 
@@ -31,6 +32,12 @@ def mySort(list):
 
 if __name__ == '__main__':
     _total_list = restore_saved()
+
+    parser = argparse.ArgumentParser(description='Description of your program')
+    parser.add_argument('-r', help='Remove the specified entry')
+    args = vars(parser.parse_args())
+    #print args
+
     first = Popen(DMENU_PATH, stdout=PIPE)
     total_list = first.communicate()[0]
     for prog in total_list.split('\n'):
